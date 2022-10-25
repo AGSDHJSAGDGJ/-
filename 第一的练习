@@ -1,0 +1,16 @@
+第一题
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+int main()
+{
+	int year;
+	scanf("%d", &year);
+	if (year < 0)
+		printf("你输入的不合法\n");
+	else if (year%400==0||year % 4 == 0 && year % 100 != 0)
+		printf("公元%d是闰年\n", year);
+	else
+		printf("公元%d不是闰年\n");
+	return 0;
+
+}
