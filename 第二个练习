@@ -1,0 +1,14 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+int main(viod)
+{
+	int score;
+	scanf("%d", &score);
+	if (score < 0 || score >100)
+		printf("Invalid\n");
+	else if ("score>= 0 && score < 60")
+		printf("Failed\n");
+		printf("%.1f", (1.0 + (score - 60) * 0.1));
+	return 0;
+
+}
